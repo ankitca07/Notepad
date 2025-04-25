@@ -1,8 +1,6 @@
 # Authenticated Notes Dashboard
 
-A full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js) allowing users to securely create, manage, and view their personal notes after authenticating. Features an interactive and responsive user interface with smooth animations and dark mode support.
-
-**[Link to Live Demo]** (Optional: Add link if deployed)
+A full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js) allowing users to securely create, manage, and view their personal notes after authenticating. Features an interactive and responsive user interface with smooth animations and dark mode support. 
 
 ## Screenshots
 

@@ -6,10 +6,14 @@ A full-stack web application built with the MERN stack (MongoDB, Express.js, Rea
 
 (Add screenshots of your application here)
 
-*   Login Page: `![Login Page Screenshot](link/to/login_screenshot.png)`
-*   Signup Page: `![Signup Page Screenshot](link/to/signup_screenshot.png)`
-*   Dashboard (Notes View): `![Dashboard Screenshot](link/to/dashboard_screenshot.png)`
-*   Dashboard (Dark Mode): `![Dashboard Dark Mode Screenshot](link/to/dashboard_dark_mode_screenshot.png)`
+*   Login Page: `![Screenshot_25-4-2025_15327_localhost](https://github.com/user-attachments/assets/fbe8e43c-1b96-482b-b713-e3201019f932)`
+
+*   Signup Page: `![Screenshot_25-4-2025_153230_localhost](https://github.com/user-attachments/assets/2f424ebc-c254-4c47-ae6f-71cf4fb7f7d0)`
+
+*   Dashboard (Dark View): `![Screenshot_25-4-2025_15513_localhost](https://github.com/user-attachments/assets/8955d01a-eb45-4b65-95cc-20adff279e04)`
+
+*   Dashboard (Notes Mode): `![Screenshot_25-4-2025_155050_localhost](https://github.com/user-attachments/assets/c29f2440-78d3-4174-a075-2af607b107c4)`
+
 
 ## Core Features
 

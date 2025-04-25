@@ -1,0 +1,129 @@
+/* client/src/index.css */
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* CSS Variables for Theming */
+:root {
+  --background-primary: #f9fafb;
+  /* gray-50 */
+  --background-secondary: #ffffff;
+  /* white */
+  --background-tertiary: #f3f4f6;
+  /* gray-100 */
+  --text-primary: #111827;
+  /* gray-900 */
+  --text-secondary: #6b7280;
+  /* gray-500 */
+  --text-placeholder: #9ca3af;
+  /* gray-400 */
+  --text-on-primary: #ffffff;
+  --text-on-danger: #ffffff;
+  --border-color: #e5e7eb;
+  /* gray-200 */
+  --border-color-input: #d1d5db;
+  /* gray-300 */
+  --primary-color: #4f46e5;
+  /* indigo-600 */
+  --primary-hover-color: #4338ca;
+  /* indigo-700 */
+  --secondary-color: #e5e7eb;
+  /* gray-200 */
+  --secondary-hover-color: #d1d5db;
+  /* gray-300 */
+  --danger-color: #dc2626;
+  /* red-600 */
+  --danger-hover-color: #b91c1c;
+  /* red-700 */
+  --focus-ring-color: rgba(99, 102, 241, 0.5);
+  /* indigo-500 with opacity */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --input-bg: var(--background-secondary);
+}
+
+html[data-theme='dark'] {
+  --background-primary: #111827;
+  /* gray-900 */
+  --background-secondary: #1f2937;
+  /* gray-800 */
+  --background-tertiary: #374151;
+  /* gray-700 */
+  --text-primary: #f3f4f6;
+  /* gray-100 */
+  --text-secondary: #9ca3af;
+  /* gray-400 */
+  --text-placeholder: #6b7280;
+  /* gray-500 */
+  /* text-on-primary/danger often stay white */
+  --border-color: #374151;
+  /* gray-700 */
+  --border-color-input: #4b5563;
+  /* gray-600 */
+  --primary-color: #6366f1;
+  /* indigo-500 */
+  --primary-hover-color: #4f46e5;
+  /* indigo-600 */
+  --secondary-color: #4b5563;
+  /* gray-600 */
+  --secondary-hover-color: #374151;
+  /* gray-700 */
+  /* danger colors can often stay the same */
+  --focus-ring-color: rgba(129, 140, 248, 0.5);
+  /* indigo-400 with opacity */
+  /* Shadows might need adjustments in dark mode, or use overlay/different technique */
+  --shadow-sm: 0 1px 2px 0 rgb(255 255 255 / 0.05);
+  /* Example subtle white shadow */
+  --shadow-md: 0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1);
+  --input-bg: var(--background-tertiary);
+}
+
+/* Apply base theme variables */
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}

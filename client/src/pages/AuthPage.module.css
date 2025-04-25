@@ -1,0 +1,69 @@
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-primary);
+    /* Use global bg */
+    padding: 3rem 1rem;
+    /* py-12 px-4 */
+}
+
+@media (min-width: 640px) {
+
+    /* sm */
+    .pageWrapper {
+        padding: 3rem 1.5rem;
+    }
+
+    /* sm:px-6 */
+}
+
+@media (min-width: 1024px) {
+
+    /* lg */
+    .pageWrapper {
+        padding: 3rem 2rem;
+    }
+
+    /* lg:px-8 */
+}
+
+
+.formCard {
+    max-width: 28rem;
+    /* max-w-md */
+    width: 100%;
+    padding: 2rem;
+    /* p-8 */
+    background-color: var(--background-secondary);
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+
+    /* md */
+    .formCard {
+        padding: 2.5rem;
+    }
+
+    /* md:p-10 */
+}
+
+.headingContainer {
+    margin-bottom: 1.5rem;
+    /* Space below heading */
+}
+
+.heading {
+    margin-top: 1.5rem;
+    /* mt-6 */
+    text-align: center;
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 800;
+    /* font-extrabold */
+    color: var(--text-primary);
+}

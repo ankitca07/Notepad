@@ -1,0 +1,92 @@
+.topbar {
+    position: relative;
+    background-color: var(--background-secondary);
+    box-shadow: var(--shadow-sm);
+    z-index: 10;
+    /* Ensure it's above content during scroll */
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
+.content {
+    /* max-w-full mx-auto -> Handled by layout */
+    padding-left: 1rem;
+    /* px-4 */
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    /* h-16 */
+}
+
+@media (min-width: 640px) {
+
+    /* sm */
+    .content {
+        padding-left: 1.5rem;
+        /* sm:px-6 */
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* lg */
+    .content {
+        padding-left: 2rem;
+        /* lg:px-8 */
+        padding-right: 2rem;
+    }
+}
+
+.left {
+    /* Placeholder for potential content like breadcrumbs */
+}
+
+.title {
+    font-size: 1.125rem;
+    /* text-lg */
+    font-weight: 600;
+    /* font-semibold */
+    color: var(--text-primary);
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* space-x-4 */
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    color: var(--text-primary);
+    margin-right: 0.5rem;
+    /* mr-2 */
+}
+
+.userIcon {
+    height: 2rem;
+    /* h-8 w-8 */
+    width: 2rem;
+    color: var(--text-secondary);
+}
+
+/* Hide username on smaller screens if desired */
+@media (max-width: 639px) {
+
+    /* sm */
+    .userName {
+        display: none;
+    }
+}

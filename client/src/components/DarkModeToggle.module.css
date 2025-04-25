@@ -1,0 +1,28 @@
+.toggleButton {
+    padding: 0.5rem;
+    /* p-2 */
+    border-radius: 9999px;
+    /* rounded-full */
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.toggleButton:hover {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+}
+
+.toggleButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+.icon {
+    width: 1.5rem;
+    /* h-6 w-6 */
+    height: 1.5rem;
+    display: block;
+    /* Prevent extra space below icon */
+}

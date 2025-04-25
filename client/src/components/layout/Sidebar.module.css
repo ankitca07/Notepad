@@ -1,0 +1,143 @@
+.sidebar {
+    /* display: flex; */
+    /* Handled by parent */
+    flex-shrink: 0;
+}
+
+.sidebarInner {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    /* w-64 */
+    height: 100%;
+    /* Ensure it fills height */
+    border-right: 1px solid var(--border-color);
+    background-color: var(--background-secondary);
+}
+
+.scrollable {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.25rem;
+    /* pt-5 */
+    padding-bottom: 1rem;
+    /* pb-4 */
+    overflow-y: auto;
+}
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 1rem;
+    /* px-4 */
+    padding-right: 1rem;
+}
+
+.logoText {
+    font-size: 1.25rem;
+    /* text-xl */
+    font-weight: 600;
+    /* font-semibold */
+    color: var(--primary-color);
+}
+
+.nav {
+    margin-top: 1.25rem;
+    /* mt-5 */
+    flex: 1 1 0%;
+    padding-left: 0.5rem;
+    /* px-2 */
+    padding-right: 0.5rem;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    /* px-2 py-2 */
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    color: var(--text-secondary);
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    margin-bottom: 0.25rem;
+    /* space-y-1 */
+    text-decoration: none;
+}
+
+.navLink:hover {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.navLinkIcon {
+    margin-right: 0.75rem;
+    /* mr-3 */
+    height: 1.5rem;
+    /* h-6 w-6 */
+    width: 1.5rem;
+    color: var(--text-secondary);
+    /* Adjust if needed, hover takes care of group */
+    transition: color 0.15s ease-in-out;
+    flex-shrink: 0;
+}
+
+.navLink:hover .navLinkIcon {
+    color: var(--text-primary);
+    /* Icon color on link hover */
+}
+
+/* Active Link Style (Example - requires react-router NavLink) */
+.navLinkActive {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+}
+
+.navLinkActive .navLinkIcon {
+    color: var(--text-primary);
+}
+
+
+.logoutSection {
+    flex-shrink: 0;
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    padding: 1rem;
+    /* p-4 */
+}
+
+.logoutButton {
+    width: 100%;
+    justify-content: flex-start !important;
+    /* Override button's center */
+    text-align: left;
+}
+
+.logoutIcon {
+    margin-right: 0.75rem;
+    /* mr-3 */
+    height: 1.5rem;
+    /* h-6 w-6 */
+    width: 1.5rem;
+    color: var(--text-secondary);
+    transition: color 0.15s ease-in-out;
+}
+
+.logoutButton:hover .logoutIcon {
+    color: var(--text-primary);
+}
+
+/* Hide on small screens */
+@media (max-width: 767px) {
+
+    /* md breakpoint */
+    .sidebar {
+        display: none;
+    }
+}

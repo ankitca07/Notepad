@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    /* Responsive Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Base */
+    gap: 1rem;
+    /* gap-4 */
+}
+
+@media (min-width: 768px) {
+
+    /* md */
+    .grid {
+        gap: 1.5rem;
+        /* md:gap-6 */
+    }
+}
+
+/* Add more breakpoints if needed (sm, lg, xl) adjusting minmax */
+@media (min-width: 1024px) {
+
+    /* lg */
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+
+.message {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2.5rem 0;
+    /* p-10 */
+    font-style: italic;
+}
